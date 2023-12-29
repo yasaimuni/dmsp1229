@@ -1,0 +1,315 @@
+@charset "utf-8";
+/* .contents {
+  max-width: 960px;
+  /*max-widthで中央に寄った*/
+  /*margin: 0px auto;
+} */
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: 'Bebas Neue', cursive, 'Kosugi', sans-serif;
+  /* font-family: 'Righteous', cursive; */
+}
+
+body p {
+  line-height: 1.5em;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  margin-top: 80px;
+}
+
+.logo {
+  padding: 10px;
+  /* display:none; */
+  text-align: center;
+  background: #008080;
+}
+
+.logo img {
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+}
+
+.logo2 {
+  /* margin: 10px; */
+  /* padding: 10px; */
+  /* display:none; */
+  text-align: center;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.logo2 img {
+  width: 80px;
+  height: 80px;
+  margin-top:40px;
+}
+
+#fix_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  float: left;
+  z-index: 9999;
+  background: white;
+}
+
+#fix_header logo p {
+  padding: 20px 0 20px 20px;
+}
+
+.clearfix {
+  display: 0 block;
+  clear: both;
+}
+
+header #open {
+  border: none;
+  appearance: none;
+  outline: none;
+  /*押したときに消える*/
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  font-size: 24px;
+  z-index: 9999999;
+  background: none;
+}
+
+.h_nav {
+  /* display: none;  */
+  position: fixed;
+  /*ヘッダーごと折りてきてしまったので、
+  メニューだけ降りるように*/
+  top: 0;
+  right: -300px;
+  width: 300px;
+}
+
+@media screen and (min-width: 560px) {
+  #open, .h_nav {
+    display: none;
+  }
+}
+
+.h_nav_menu {
+  background: #fff;
+  opacity: 0.8;
+  /* margin: 20px; */
+  margin-left: auto;
+  border-radius: 20px 0 0 20px;
+  padding-bottom: 4px;
+  /* padding-top:80px; */
+}
+
+.h_nav ul {
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.h_nav li {
+  display: block;
+  margin: 10px;
+  /*aにいれても効かなかった*/
+  margin: 40px 20px;
+  /* width: 25%; */
+  text-align: left;
+}
+
+.h_nav li a {
+  color: #000;
+  font-size: 24px;
+  display: block;
+  width: 25%;
+}
+
+#open {
+  position: relative;
+  position: absolute;
+  color:#fff;
+}
+/*ここまでハンバーガーメニュー*/
+
+
+.container {
+  width: 800px;
+  height: auto;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.title_container {
+  width: 800px;
+  height: auto;
+  max-width: 80%;
+  background-color: #ffffff;
+  /* width: 100vh;
+  height:100vh; */
+  margin: 0 auto;
+}
+
+.container, .wh_container {
+  position: relative;
+  /*相対位置*/
+  text-align: center;
+}
+
+/*メインイメージ*/
+
+#main_img {
+  padding-top: 40px;
+  /* position: relative; */
+  /*相対位置への配置 */
+  /* width:480px;
+  height:780px;
+  width: 100%;
+  margin:0 auto;
+  background:#008080;
+  /* object-fit:cover; */
+  /* height: calc(100vh-220px); */
+}
+
+#main_img img {
+  /* position:absolute;/*絶対位置、親ボックスの左上が基準位置*/
+  width: 100%;
+  /* height: calc(100vh-3000px); */
+  height: calc(100vh-220px);
+  position: relative;
+}
+
+
+
+
+/**/
+
+
+nav {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.g-nav ul {
+  text-align: center;
+  box-sizing: border-box;
+  /* border-bottom: 16px solid #008080; */
+}
+
+.g-nav ul li {
+  display: inline-block;
+  margin: 10px;
+  /*aにいれても効かなかった*/
+  margin: 40px 20px;
+  /* width: 25%; */
+}
+
+.g-nav ul li a {
+  color: #000;
+  font-size: 24px;
+  display: block;
+  width: 25%;
+}
+
+/*@media screen and (max-width:560px) {
+  .g-nav, .g-nav-menu {
+    display: none;
+  }
+}*/
+
+.now {
+  display: inline-block;
+  margin: 40px;
+  /*aにいれても効かなかった*/
+  padding: 8px 4px;
+  background: rgb(150, 134, 134);
+  opacity: 0.4;
+}
+
+.ft {
+  text-align: center;
+  background: #008080;
+  color: #fff;
+}
+
+.ft2 {
+  padding: 80px 0;
+}
+
+.page_title {
+  font-style: oblique;
+  font-size: 32px;
+  padding: 40px 0;
+  margin-bottom: 20px;
+  /* padding-left: 20px; */
+  color: beige;
+  background: #fff;
+  /*#fffにする*/
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 4px 4px 0 #fff;
+  /* border-top: 16px solid #008080; */
+  border-bottom: 16px solid #008080;
+  margin-top: 120px;
+}
+
+.flex li {
+  width: 40%;
+  margin-top: 20px;
+  /* position:absolute; */
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .eat, .news {
+  width: 100%;
+} */
+
+.box {
+  border: double 10px rgb(95, 92, 80);
+  background: linear-gradient(45deg, transparent 20px, #fff 20px), linear-gradient(135deg, transparent 20px, #fff 20px), linear-gradient(225deg, transparent 20px, #fff 20px), linear-gradient(315deg, transparent 20px, #fff 20px);
+  background-position: bottom left, top left, top right, bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 80px auto;
+  height: auto;
+  /*この２行でどの画面幅でも中央に寄る寄る*/
+}
+
+.ft2 i{
+  font-size:32px;
+  padding: 16px;
+}
+
+.copyright {
+  padding: 40px auto;
+  font-size: 28px;
+}
+
+#backtop {
+  position: fixed;
+  bottom: 120px;
+  right: 50px;
+  background: #fff;
+  padding: 10px 20px;
+  display: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.copyright {
+  padding: 1em
+}

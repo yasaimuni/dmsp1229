@@ -1,0 +1,98 @@
+@charset "utf-8";
+.container {
+  background: #008080;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#menu_box {
+  padding: 40px 0;
+  margin: 40px 0;
+}
+
+#menu_box img {
+  width: 100%;
+  height: auto;
+  /* margin: 20px; */
+}
+
+.photo {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.photo :hover {
+  /* max-width: 100%;
+  height: auto; */
+  transform: rotate(15deg);
+}
+
+.menu {
+  display: table;
+  color: #fff;
+  padding-top: 40px;
+  text-align: center;
+  /*インライン要素なので、これでまとめて中央寄せができる*/
+  margin:0;
+  padding:0;
+}
+
+.menu li {
+  display:table-cell;
+  width: 30%;
+  position: relative;
+  /* margin-bottom: 10px; */
+  display: inline-block;
+  padding: 20px 8px;
+  list-style:none;
+}
+
+.menu #h2_do {
+  font-size: 80px;
+  position: relative;
+  opacity:0.7;
+}
+
+.menu #h2_dr {
+  /* writing-mode: vertical-rl; */
+  font-size: 80px;
+  position: relative;
+  opacity:0.7;
+  /* margin-left: auto; */
+  /* padding-right: 40px */
+}
+
+.menu #h2_do span {
+  position: absolute;
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.menu #h2_dr span {
+  position: absolute;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.menu h3 {
+  font-style: oblique;
+  margin: 6px 0;
+  height:2em;
+  vertical-align:middle;
+}
+
+.menu .item {
+  margin-left: -10px;
+  margin-right: -10px;
+  /*liの横幅をそのままで文字を飛び出させる*/
+}
+
+.menu .item span {
+  font-size: 20px;
+}
+
+
+
+/*レスポンシブの際に縦並びにすることは、
+商品が多い場合、スクロールするのが大変なため、
+横並びのまま表示させている*/

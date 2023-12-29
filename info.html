@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+
+<link rel="apple-touch-icon" sizes="512x512" href="./apple-touch-icon.png">
+
+<meta name="apple-mobile-web-app-title" content="">
+
+<link href="src/css/reset.css" rel="stylesheet" type="text/css">
+<link href="src/css/common.css" rel="stylesheet" type="text/css">
+<link href="src/css/info.css" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	$('#backtop').click(function(){
+	$('html,body').animate({scrollTop:0},1000);
+	});
+
+
+	$('#open').click(function(){
+	if($('.h_nav').css('right')!='0px'){
+	//$('.h_nav').slideUp(200);
+	$('.h_nav').animate({'right':'0px'},500);
+	$('#open').html('三')
+	}else{
+	//$('.h_nav').slideDown(200);
+	$('.h_nav').animate({'right':'-400px'},500);
+	$('#open').html('×')
+	}
+	});
+
+	$('.h_nav a').click(function(){
+	$('.h_nav').slideUp(200);
+	$('#open').html('×');
+	});
+	// var jump=$(this).attr('href');
+	// var eleoffset=$(jump).offset().top;
+	// var hederh=$('header').height();
+	// $('html,body').animate({scrollTop:eleoffset-hederh});
+	// return false;
+	// });
+
+	});
+
+</script>
+
+<title>d_info</title>
+</head>
+
+<body>
+
+<header id="fix_header" class="clear_fix">
+    <div class="logo"><a href="home.html"><img src="img/logo.png"></a></div>
+
+     <button id="open">三</button>
+     <nav class="h_nav">
+         <ul class="h_nav_menu">
+
+             <li class="logo2"><a href="home.html">
+                 <img src="img/logo.png"></a></li>
+
+             <li><a href="menu.html">
+                     MENU</a></li>
+             <li><a href="info.html">
+                     INFO</a></li>
+             <li><a href="shop.html">
+                     SHOP</a></li>
+             <li><a href="reserve.html">
+                     RESERVE</a></li>
+         </ul>
+     </nav>
+
+</header>
+
+<main class="contents">
+
+    <!-- <section id="main_img"> -->
+        <!-- <div class="container">
+                <img src="img/e1.jpg" alt="">
+             <h2>INFOMATION</h2>
+        </div> -->
+
+        <div class="container">
+            <h1 class="page_title">おしらせ</h1>
+        </div>
+
+        <!-- <div class="box"> -->
+            <section class="news">
+                <div class="container">
+                    <div class="box">
+
+                        <div class="container">
+                        <article class="news_card">
+                        <h3 class="news_title" id="1">2020/12/1</h3>
+                            <img src="img/d-10.png" alt="">
+                                <h4>今月の限定メニュー</h4>
+                                <p>ストロベリーフレーバー登場!!<br>
+                                旬のイチゴを使った甘酸っぱい風味が特徴のチョコレートでコーティングしました。
+                            --- 1日10個限定 ---</p>
+                            <p>PRICE　350円</p>
+                        </article>          
+
+                        <article class="news_card">
+                        <h3 class="news_title" id="2">2020/9/1</h3>
+                            <img src="img/info.png" alt="">
+                                <h4>感染症対策について</h4>
+                                <p>感染症への取り組みとして、今まで以上の除菌を心がけております。</p>
+                        </article>
+
+                        <article class="news_card">
+                        <h3 class="news_title" id="3">2020/8/1</h3>
+                            <img src="img/info.png" alt="">
+                                <h4>新店舗<br>オープンのおしらせ</h4>
+                                <p>この度、第3号店をオープンいたします。</p>
+                        </article>
+
+    
+                        </div>
+
+                        <div class="next_page"><a href="#" alt="">1</a>
+                                <a href="#" alt="">2</a>
+                        </div>
+                    
+                        
+                    </div>
+                </div>
+                    </section>
+
+                <div class="news">
+                    <div class="container">
+                        <div class="box">
+                            <p>営業日のご案内</p>
+                            <p>定休日：毎週水曜</p>
+                            <p>営業時間：11:00~14:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="info2">
+                        <div class="wh_container">
+                        <ul class="flex">
+                            <li> <img src="img/info2.jpg"
+                                alt=""></li>
+
+                            <li> <img src="img/info3.jpg"
+                                alt=""></li>
+                                
+                            <li> <img src="img/info4.jpg" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="news">
+                    <div class="container">
+                        <div class="box">
+                            <p>テーブル　10<span>卓</span></p>
+                            <p>カウンター　20<span>席</span></p>
+                            <p>全席禁煙</p>
+                        </div>
+                    </div>
+                </div>
+<!-- 
+    </section> -->
+</main>
+
+<footer>
+    <nav class="g-nav">
+        <ul class="g-nav-menu">
+            <li><a href="menu.html">
+                    MENU</a></li>
+            <li class="now"><a href="info.html">
+                    INFO</a></li>
+            <li><a href="shop.html">
+                    SHOP</a></li>
+            <li><a href="reserve.html">
+                    RESERVE</a></li>
+        </ul>
+    </nav>
+
+
+   <div class="ft">
+       <div class="ft2">
+            <aside class="sns">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </aside>
+
+            <p class="copyright"><small>&copy:MABEL DONUT</small></p>
+         </div>
+    </div>
+</footer>
+
+<p id="backtop">トップへ</p>
+
+</body>
+</html>

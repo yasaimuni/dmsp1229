@@ -1,0 +1,308 @@
+@charset "utf-8";
+body {
+  font-family: 'Bebas Neue', cursive, 'Kosugi', sans-serif;
+  /* font-family: 'Righteous', cursive; */
+
+}
+
+header {
+  width: 100%;
+}
+
+.logo {}
+
+#fix_header {
+  position fixed;
+  top: 0;
+  left: 0;
+  float: left;
+  z-index: 9999;
+}
+
+#fix_header logo p {
+  padding: 20px 0 20px 20px;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+/* #main_img p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 40px;
+} */
+
+#main_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+#main_img {
+  background-color: #008080;
+}
+
+.menu {
+  margin: 0 40px;
+  padding: 80px 0;
+  text-align: center;
+  /*インライン要素なので、これでまとめて中央寄せができる*/
+}
+
+.menu li {
+  width: 30%;
+  position: relative;
+  /* margin-bottom: 10px; */
+  display: inline-block;
+  padding: 20px;
+}
+
+.menu h3 {
+  font-style: oblique;
+}
+
+.menu li img {
+  /* padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px; */
+}
+
+.menu {
+  /* display: flex;
+  /*flexレイアウトを利用可能とするために、
+    親要素にdisplay:flexを設定*/
+  /*各種プロパティが初期値の状態では、
+    アイテムは左から右に一列に並び、
+    かつ一番コンテンツの多いものに合わせて、
+    それぞれのアイテムの高さが自動的にそろう
+    */
+  /*justify-content: center;*/
+  /*アイテムの主軸方向の整列を中央揃えとする*/
+  /*flex-wrap: wrap;*/
+  /*折り返さないという
+    初期値を、折り返すという値に変更*/
+  /*align-content:space-around; */
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+nav {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 40px;
+  /*aにいれても効かなかった*/
+}
+
+nav ul li a {
+  color: #000;
+  font-size: 24px;
+}
+
+footer {
+  text-align: center;
+}
+
+.item {
+  color: #fff;
+}
+
+.item p {
+  font-size: 24px;
+  margin-top: 0.5em;
+}
+
+.item span {
+  font-size: 16px;
+}
+
+.item h3 {
+  margin-top: 0.5em;
+}
+
+table {
+  margin: 40px auto;
+}
+
+#rsv_main {
+  background-color: #008080;
+}
+
+#reserveForm p {
+  margin-left: 40px;
+}
+
+.reserveBtns {
+  text-align: center;
+}
+
+.reserveBtns input {
+  width: 100px;
+  margin: 10px 10px;
+  padding: 10px;
+  -weblit-appearnce: none;
+  background: rgb(0, 155, 155);
+  color: #fff;
+  border-radius: 24px;
+  border: none;
+}
+
+@media screen and (min-width:$sm-width) {
+  /*PCのみ*/
+  .reserveBtns input:hover {
+    opacity: 0.7;
+  }
+}
+
+.page_title {
+  font-style: oblique;
+  font-size: 24px;
+  padding: 20px 0;
+  padding-left: 20px;
+  color: beige;
+  /*#fffにする*/
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 4px 4px 0 #fff;
+  margin-top: 40px;
+  border-top: 16px solid #008080;
+}
+
+#reserveForm table th {
+  text-align: rignt;
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+#reserveForm th, #reserveForm td {
+  padding: 8px 8px;
+}
+
+#reserveForm input, #reserveForm textarea {
+  padding: 8px 0;
+}
+
+#reserveForm input[type="text"] {
+  padding-right: 4px;
+  width: 25%;
+}
+
+/* 
+.addres {
+  float: left;
+} */
+
+/*左に縦に置く*/
+
+/* .map {
+  float: right;
+} */
+
+/*手書きの地図を右に置く*/
+
+.rsv_main #reser {
+  color: #fff;
+  background: #008080;
+}
+
+.rsv_main table {
+  padding: 20px 20px;
+}
+
+.addres h2 {
+  font-style: oblique;
+  font-size: 24px;
+  padding: 20px 0 20px 40px;
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 4px 4px 0 #fff;
+}
+
+.addres p {
+  padding-left: 20px;
+}
+
+.place #place_img img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 40px 40px;
+}
+
+.container {
+  position: relative;
+  /*相対位置*/
+  text-align: center;
+}
+
+#place_img {
+  background: #fff;
+}
+
+.eat {
+  position: relative;
+}
+
+#eat_img {
+  max-width: 100%;
+  margin: auto;
+}
+
+#eat_img img {
+  width: 100%;
+  height: auto;
+}
+
+#eat_img h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  color: #fff;
+  font-size: 80px;
+  -webkit-text-stroke: 1px #fff;
+  opacity: 0.7;
+  font-style: oblique;
+}
+
+.flex li {
+  width: 20%;
+  margin-top: 20px;
+  /* position:absolute; */
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .eat, .news {
+  width: 100%;
+} */
+
+.box {
+  border: double 5px beige;
+  background: linear-gradient(45deg, transparent 20px, #fff 20px), 
+  linear-gradient(135deg, transparent 20px, #fff 20px),
+  linear-gradient(225deg, transparent 20px, #fff 20px),
+  linear-gradient(315deg, transparent 20px, #fff 20px);
+  background-position: bottom left, top left,top right, bottom right;
+  background-size:50% 50%;
+  background-repeat:no-repeat;
+}

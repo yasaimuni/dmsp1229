@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+
+<link rel="apple-touch-icon" sizes="512x512" href="./apple-touch-icon.png">
+
+<meta name="apple-mobile-web-app-title" content="Cafe Charles">
+
+<link href="src/css/reset.css" rel="stylesheet" type="text/css">
+<link href="src/css/common.css" rel="stylesheet" type="text/css">
+<link href="src/css/reserve.css" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	$('#backtop').click(function(){
+	$('html,body').animate({scrollTop:0},500);
+	});
+    
+
+$('#open').click(function(){
+if($('.h_nav').css('right')!='0px'){
+//$('.h_nav').slideUp(200);
+$('.h_nav').animate({'right':'0px'},500);
+$('#open').html('三')
+}else{
+//$('.h_nav').slideDown(200);
+$('.h_nav').animate({'right':'-400px'},500);
+$('#open').html('×')
+}
+});
+
+$('.h_nav a').click(function(){
+$('.h_nav').slideUp(200);
+$('#open').html('×');
+});
+// var jump=$(this).attr('href');
+// var eleoffset=$(jump).offset().top;
+// var hederh=$('header').height();
+// $('html,body').animate({scrollTop:eleoffset-hederh});
+// return false;
+// });
+
+});
+
+</script>
+
+<title>d_reserve</title>
+</head>
+
+<body>
+
+<header id="fix_header" class="clear_fix">
+    <div class="logo"><a href="home.html"><img src="img/logo.png"></a></div>
+
+     <button id="open">三</button>
+     <nav class="h_nav">
+         <ul class="h_nav_menu">
+             <li class="logo2"><a href="home.html">
+                        <img src="img/logo.png"></a></li>
+             <li><a href="menu.html">
+                     MENU</a></li>
+             <li><a href="info.html">
+                     INFO</a></li>
+             <li><a href="shop.html">
+                     SHOP</a></li>
+             <li><a href="reserve.html">
+                     RESERVE</a></li>
+         </ul>
+     </nav>
+
+</header>
+
+
+<main class="rsv_main">
+    
+    <section id="reser">
+        <div class="container">
+            <h1 class="page_title">ご予約フォーム</h1>
+                <div class="box">
+            <form id="reserveForm" action="#" method="post">
+                <!-- <div class="bg">
+                    <img src="img/bg1.jpg">
+                </div>  -->
+            <div class="table">       
+ 
+                <table border="1">
+                            <p>ご都合のよろしいお時間に合わせて、<br>ドーナツをご用意いたします。<br>
+                                なるべくできたてに近い状態で<br>お召し上がりいただきたい。<br>
+                                そんな想いで、承っております。<br><br>
+                                以下、全て必須項目です。</p>
+                    <tr>
+                        <th>お名前</th>
+                        <td><input type="text" name="name1"><input type="text" name="name2"></td>
+                    </tr>
+
+                    <tr>
+                        <th id="resdo">ドーナツ</th>
+                            <td class="dn">
+                            <span class="dnn"><input type="checkbox" name="donuts" value="チョコ">チョコ</span>
+                            <textarea name="comment" rows="1" cols="2"></textarea>個<br>
+                            
+                            <span class="dnn"><input type="checkbox" name="donuts" value="グレーズド">グレーズド</span>
+                            <textarea name="comment" rows="1" cols="2"></textarea>個<br>
+
+                            <span class="dnn"><input type="checkbox" name="donuts" value="チョコスノー">チョコスノー</span>                            
+                            <textarea name="comment" rows="1" cols="2"></textarea>個<br>
+
+                            <span class="dnn"><input type="checkbox" name="donuts" value="クッキークリーム">クッキークリーム</span>                          
+                            <textarea name="comment" rows="1" cols="2"></textarea>個<br>
+
+                            <span class="dnn"><input type="checkbox" name="donuts" value="チョコカバー">チョコカバー</span>                          
+                            <textarea name="comment" rows="1" cols="2"></textarea>個<br>
+                            </td>
+                        </tr>
+
+                    <tr>
+                        <th class="tel">連絡のつく<br>携帯番号</th>
+                        <td><input type="text" name="phonenumber"></td>
+                    </tr>
+
+                    <tr>
+                        <th>ご希望日時<br>（最大8桁）</th>
+                        <td><input type="text" name="phonenumber"></td>
+                    </tr>
+
+                    <!-- <tr>
+                        <th>ドーナツ</th>
+                        <td>
+                            <select name="donuts">
+                                <option value="" selected>お選びください</option>
+                                <option value="0">チョコ</option>
+                                <option value="1">グレーズド</option>
+                                <option value="2">チョコスノー</option>
+                                <option value="3">クッキークリーム</option>
+                                <option value="4">チョコカバー</option>
+                            </select>
+                        </td>
+                    </tr> -->
+
+
+                </table>
+                <div class="reserveBtns">
+                    <input type="submit" value="送信">
+                </div>
+                </div>
+    </form>
+</div>
+</div>
+</section>
+</main>
+
+
+
+<footer>
+        <nav class="g-nav">
+            <ul class="g-nav-menu">
+                <li><a href="menu.html">
+                        MENU</a></li>
+                <li><a href="info.html">
+                        INFO</a></li>
+                <li><a href="shop.html">
+                        shop</a></li>
+                <li class="now"><a href="reserve.html">
+                        RESERVE</a></li>
+            </ul>
+        </nav>
+
+
+           <div class="ft">
+               <div class="ft2">
+                   <aside class="sns">
+                       <i class="fab fa-twitter"></i>
+                       <i class="fab fa-instagram"></i>
+                   </aside>
+
+                   <p class="copyright"><small>&copy:MABEL DONUT</small></p>
+               </div>
+           </div>
+
+</footer>
+
+<p id="backtop">トップへ</p>
+
+</body>
+</html>
